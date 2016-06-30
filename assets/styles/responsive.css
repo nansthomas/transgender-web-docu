@@ -1,0 +1,69 @@
+.blog-content .wrapper{
+	width: 70%;
+}
+.blog-content .wrapper #video-preview{
+	width: 100%;
+}
+
+
+@media (max-width:700px) {
+	.blog-content .wrapper{
+		width: 100%;
+		padding: 0;
+		padding-top: 20px;
+		padding-bottom: 60px;
+	}
+	#twitter-widget-1{
+		display: none;
+	}
+	#twitter-button{
+		display: none;
+	}
+	.container h1{
+		font-size: 30px;
+	}
+	.information{
+		text-align: center;
+		font-size: 12px;
+	}
+	.tag{
+		margin-top: 10px;
+	}
+	#menu-content h1{
+		font-size: 14px;
+	}
+	#menu-content p{
+		font-size: 12px;
+	}
+	.all-tag{
+		font-size: 12px;
+	}
+	.intro-personnage p{
+		font-size: 14px;
+	} 
+	.intro-country p{
+		font-size: 14px;
+	} 
+	.other-content h1{
+		font-size: 16px;
+	} 
+	.other-content p{
+		font-size: 14px;
+	} 
+	.footer h1{
+		font-size: 18px;
+	}
+	.footer p{
+		font-style: 14px;
+	}
+	.footer img{
+		flex-direction: columb;
+	}
+	#menu-content .all-perso .perso{
+		width: 50px;
+		height: 50px;
+	}
+	#select h1{
+		font-size: 18px;
+	}
+}
