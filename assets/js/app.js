@@ -119,3 +119,24 @@ twitterClose.addEventListener('click', function () {
   twitterClose.style.display = 'none';
   twitterButton.style.display = 'block';
 });
+
+// MENU ANIMATION
+
+var menuButton = document.querySelector('#menu-circle');
+var openMenuIcon = document.querySelector('#open-menu');
+var closeMenuIcon = document.querySelector('#close-menu');
+var menuDeploy = document.querySelector('#menu-deploy');
+
+openMenuIcon.addEventListener('click', function () {
+  menuButton.style.transform = 'scale(80)';
+  openMenuIcon.style.display = 'none';
+  closeMenuIcon.style.display = 'block';
+});
+
+closeMenuIcon.addEventListener('click', function () {
+  menuButton.style.transform = 'scale(1)';
+  closeMenuIcon.style.display = 'none';
+  setTimeout(function () {
+    openMenuIcon.style.display = 'block';
+  }, 300);
+});

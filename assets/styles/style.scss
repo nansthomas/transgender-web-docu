@@ -184,10 +184,10 @@ p {
 
 // DISCOVER button
 
-.menu {
+#menu-circle {
   z-index: 400;
   position: fixed;
-  top: 20px;
+  top: 14px;
   left: 20px;
   background: #fff;
   cursor: pointer;
@@ -199,9 +199,19 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  img {
+  transition: 0.3s;
+  #open-menu {
     height: 17px;
   }
+}
+
+#close-menu {
+  height: 19px;
+  position: fixed;
+  top: 30px;
+  left: 36px;
+  display: none;
+  z-index: 400;
 }
 
 // TWITTER BUTTON
