@@ -10,6 +10,13 @@ var time;
 
 var range = document.querySelector('input[type="range"]');
 
+// DISABLE ON MOBILE
+
+var size = $(window).width();
+if (size <= 768) {
+  $.scrollify.disable();
+}
+
 if (video) {
 
   // UPDATE TIME TO THE VALUE RANGE AND CHANGE COLOR
@@ -121,44 +128,6 @@ twitterClose.addEventListener('click', function () {
   twitterButton.style.display = 'block';
 });
 
-// DISABLE SCROLL
-
-// left: 37, up: 38, right: 39, down: 40,
-// spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
-var keys = { 37: 1, 38: 1, 39: 1, 40: 1 };
-
-function preventDefault(e) {
-  e = e || window.event;
-  if (e.preventDefault)
-    e.preventDefault();
-  e.returnValue = false;
-}
-
-function preventDefaultForScrollKeys(e) {
-  if (keys[e.keyCode]) {
-    preventDefault(e);
-    return false;
-  }
-}
-
-function disableScroll() {
-  if (window.addEventListener) // older FF
-    window.addEventListener('DOMMouseScroll', preventDefault, false);
-  window.onwheel = preventDefault; // modern standard
-  window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
-  window.ontouchmove  = preventDefault; // mobile
-  document.onkeydown  = preventDefaultForScrollKeys;
-}
-
-function enableScroll() {
-  if (window.removeEventListener)
-    window.removeEventListener('DOMMouseScroll', preventDefault, false);
-  window.onmousewheel = document.onmousewheel = null;
-  window.onwheel = null;
-  window.ontouchmove = null;
-  document.onkeydown = null;
-}
-
 // MENU ANIMATION
 var body = document.querySelector('body');
 var menuButton = document.querySelector('#menu-circle');
@@ -185,7 +154,12 @@ openMenuIcon.addEventListener('click', function () {
 // Close Menu
 closeMenuIcon.addEventListener('click', function () {
   body.style.overflow = 'auto';
-  $.scrollify.enable();
+  if (size <= 768) {
+    $.scrollify.disable();
+  } else {
+    $.scrollify.enable();
+  }
+
   menuButton.style.transform = 'scale(1)';
   closeMenuIcon.style.display = 'none';
   menuDeploy.style.display = 'none';
