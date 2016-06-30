@@ -182,6 +182,28 @@ p {
 // MENU
 ////////
 
+// DISCOVER button
+
+.menu {
+  z-index: 400;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: #fff;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  height: 50px;
+  width: 50px;
+  border-radius: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    height: 17px;
+  }
+}
+
 // TWITTER BUTTON
 
 #twitter-button {
