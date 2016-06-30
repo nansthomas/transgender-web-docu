@@ -10,7 +10,8 @@
 	.blog-content .wrapper{
 		width: 100%;
 		padding: 0;
-		padding-top: -20px;
+		padding-top: 20px;
+		padding-bottom: 60px;
 	}
 	#twitter-widget-1{
 		display: none;
@@ -50,13 +51,19 @@
 		font-size: 14px;
 	} 
 	.footer h1{
-		font-size: 20px;
+		font-size: 18px;
 	}
 	.footer p{
-		font-style: 16px;
+		font-style: 14px;
+	}
+	.footer img{
+		flex-direction: columb;
 	}
 	#menu-content .all-perso .perso{
 		width: 50px;
 		height: 50px;
+	}
+	#select h1{
+		font-size: 18px;
 	}
 }
