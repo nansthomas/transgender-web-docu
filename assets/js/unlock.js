@@ -31,7 +31,11 @@ $(function () {
         // UNLOCK
         $('#unlock').addClass('unlock');
         $('#home').addClass('unlock');
-        window.location.href = 'personnage.html';
+        $('.container').fadeOut();
+        $('#select').css({ 'display': 'flex' });
+        setTimeout(function () {
+          $('#select').fadeTo('slow', 1);
+        }, 500);
       }
     },
   });

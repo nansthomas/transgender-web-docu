@@ -23,10 +23,9 @@ if (video) {
                                   'color-stop(' + val + ', rgba(0,0,0,0.5))' + ')';
   });
 
-  console.log(video.currentTime);
   // CHANGE VIDEO TIME WHEN INPUT CHANGE
   range.addEventListener('input', function () {
-    video.currentTime = ( range.value / 100 ) * video.duration;
+    video.currentTime = (range.value / 100) * video.duration;
     console.log('range value : ' + range.value);
     console.log('duration : ' + video.duration);
     console.log('currentTime : ' + video.currentTime);
@@ -170,6 +169,10 @@ var menuDeploy = document.querySelector('#menu-content');
 // Open Menu
 openMenuIcon.addEventListener('click', function () {
   body.style.overflow = 'hidden';
+  setTimeout(function () {
+    $('body').animate({ scrollTop: 0 }, '300');
+  }, 500);
+
   $.scrollify.disable();
   menuButton.style.transform = 'scale(80)';
   openMenuIcon.style.display = 'none';
