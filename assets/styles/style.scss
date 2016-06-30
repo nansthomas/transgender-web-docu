@@ -178,6 +178,25 @@ p {
   }
 }
 
+.country {
+  img {
+    margin-right: 10px;
+    position: relative;
+    top: 2px;
+  }
+}
+.tag {
+  background: rgba(14, 14, 14, 0.56);
+  padding: 10px;
+  border-radius: 6px;
+  margin-left: 5px;
+  transition: all 0.3s;
+  cursor: pointer;
+  &:hover {
+    background: rgba(14, 14, 14, 0.40);
+  }
+}
+
 ////////
 // MENU
 ////////
@@ -223,7 +242,27 @@ p {
   z-index: 1000;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   display: none;
+  h1, p {
+    color: #424242;
+    text-shadow: none;
+  }
+  .all-tag {
+    width: 60%;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .tag {
+    background: none;
+    border: 1px solid #3c3c3c;
+    line-height: 50px;
+    transition: all 0.3s;
+    cursor: pointer;
+    &:hover {
+      background: rgba(0, 0, 0, 0.1);
+    }
+  }
 }
 
 // TWITTER BUTTON
@@ -296,24 +335,6 @@ p {
       margin-top: 10px;
       color: $white;
       text-shadow: $shadow;
-      .country {
-        img {
-          margin-right: 10px;
-          position: relative;
-          top: 2px;
-        }
-      }
-      .tag {
-        background: rgba(14, 14, 14, 0.56);
-        padding: 10px;
-        border-radius: 6px;
-        margin-left: 5px;
-        transition: all 0.3s;
-        cursor: pointer;
-        &:hover {
-          background: rgba(14, 14, 14, 0.40);
-        }
-      }
     }
   }
 }
