@@ -18,7 +18,7 @@ if (video) {
 
   // UPDATE TIME TO THE VALUE RANGE AND CHANGE COLOR
   video.addEventListener('timeupdate', function () {
-    range.value = video.currentTime;
+    range.value = video.video.currentTime / video.video.duration;
     var val = (range.value - range.getAttribute('min')) /
     (range.getAttribute('max') - range.getAttribute('min'));
 
