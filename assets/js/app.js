@@ -11,14 +11,10 @@ var time;
 var range = document.querySelector('input[type="range"]');
 
 if (video) {
-  // GET DURATION
-  video.addEventListener('loadedmetadata', function () {
-    range.max = video.duration;
-  });
 
   // UPDATE TIME TO THE VALUE RANGE AND CHANGE COLOR
   video.addEventListener('timeupdate', function () {
-    range.value = video.video.currentTime / video.video.duration;
+    range.value = video.currentTime / video.duration * 100;
     var val = (range.value - range.getAttribute('min')) /
     (range.getAttribute('max') - range.getAttribute('min'));
 
@@ -27,9 +23,13 @@ if (video) {
                                   'color-stop(' + val + ', rgba(0,0,0,0.5))' + ')';
   });
 
+  console.log(video.currentTime);
   // CHANGE VIDEO TIME WHEN INPUT CHANGE
   range.addEventListener('input', function () {
-    video.currentTime = range.value;
+    video.currentTime = ( range.value / 100 ) * video.duration;
+    console.log('range value : ' + range.value);
+    console.log('duration : ' + video.duration);
+    console.log('currentTime : ' + video.currentTime);
   });
 
   // SHOW THE INFOS DIV
