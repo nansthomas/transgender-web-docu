@@ -272,6 +272,20 @@ p {
       background: rgba(0, 0, 0, 0.1);
     }
   }
+  .all-perso {
+    width: 60%;
+    text-align: center;
+    margin-top: 40px;
+    .perso {
+      background-size: cover;
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      display: inline-block;
+      margin-left: 15px;
+      margin-top: 5px;
+    }
+  }
 }
 
 // TWITTER BUTTON
