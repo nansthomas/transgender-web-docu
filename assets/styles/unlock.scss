@@ -1,26 +1,22 @@
 /*LOCK*/
 
 .container {
-	height: 100%;
-	width: 100%;
-	background-image: linear-gradient(136deg, #ff7a7a 0%, #ff7ab6 100%);
+	height: 100vh;
+  width: 100%;
+	background-image: linear-gradient(136deg, rgba(22,191,253,0.3) 0%, rgba(255,122,182,0.6) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 /* ------ UNLOCK ------ */
 
 #unlock {
 	font-family: helvetica;
-	position: absolute;
-  top: 50%;
-  left: 50%;
-	-webkit-transform: translate(-50%,-50%);
-	-ms-transform: translate(-50%,-50%);
-	-o-transform: translate(-50%,-50%);
-	transform: translate(-50%,-50%);
 
 	width: 186px;
 	height: 73px;
-	text-align: center;
 	opacity: 1;
 	-webkit-transition: all 0.3s ease;
 	   -moz-transition: all 0.3s ease;
@@ -42,7 +38,7 @@
 }
 
 #unlock .content:after {
-	content: 'drag';
+	content: 'drag to start';
 	color: #FFF;
 	font-size: 11px;
 	font-family:f-gm;

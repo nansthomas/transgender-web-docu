@@ -31,7 +31,7 @@ $(function () {
         // UNLOCK
         $('#unlock').addClass('unlock');
         $('#home').addClass('unlock');
-        window.location.href = 'http://google.fr';
+        window.location.href = 'personnage.html';
       }
     },
   });

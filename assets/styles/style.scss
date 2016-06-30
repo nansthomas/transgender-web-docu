@@ -1,3 +1,17 @@
+@font-face{
+  font-family: 'proxima-nova';
+  src: url("../fonts/ProximaNova-RegularWeb.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'proxima-nova';
+  src: url("../fonts/ProximaNova-BoldWeb.woff") format("woff");
+  font-weight: 700;
+  font-style: bold;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -95,6 +109,57 @@ input[type=range]::-webkit-slider-thumb {
 }
 input[type=range]:focus::-webkit-slider-runnable-track {
   background: rgba(0, 0, 0, 0.5);
+}
+
+// GLOBAL STYLE
+
+h1 {
+  font-size: 46px;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0,0,0,.1),0 1px 1px rgba(0,0,0,.3);
+  font-weight: 700;
+  font-family: 'proxima-nova';
+  line-height: 0px;
+}
+
+p {
+  width: 70%;
+  text-align: center;
+  line-height: 25px;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0,0,0,.1),0 1px 1px rgba(0,0,0,.3);
+  font-family: 'proxima-nova';
+  font-size: 16px;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+// PERSONNAGE PAGE
+
+.intro-personnage {
+  height: 100vh;
+  background-size:cover;
+  .container {
+    background-image: linear-gradient(136deg, rgba(0, 0, 0, 0.42) 0%, rgba(0, 0, 0, 0.53) 100%);
+    .information {
+      font-family: 'proxima-nova';
+      color: #fff;
+      text-shadow: 0 0 10px rgba(0,0,0,.1),0 1px 1px rgba(0,0,0,.3);
+      .country {
+        img {
+          margin-right: 10px;
+          position: relative;
+          top: 2px;
+        }
+      }
+      .tag {
+        background: rgba(14, 14, 14, 0.56);
+        padding: 10px;
+        border-radius: 6px;
+        margin-left: 5px;
+      }
+    }
+  }
 }
 
 @import 'unlock';
