@@ -141,6 +141,7 @@ p {
 }
 
 #video-preview {
+  margin-top: 20px;
   height: 390px;
   background-size: cover;
   width: 660px;
@@ -154,6 +155,12 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.3s;
+    &:hover {
+      background: -moz-linear-gradient(top,  rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.8) 100%);
+      background: -webkit-linear-gradient(top,  rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.8) 100%);
+      background: linear-gradient(to bottom,  rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.8) 100%);
+    }
     .discover {
       background: none;
       border: 1.5px solid $white;
@@ -351,6 +358,54 @@ p {
       color: #3c3c3c;
       text-shadow: none;
     }
+  }
+}
+
+// COUNTRY PAGE
+
+.intro-country {
+  height: 80vh;
+  background-size:cover;
+  .container {
+    background-image: linear-gradient(136deg, rgba(0, 0, 0, 0.42) 0%, rgba(0, 0, 0, 0.53) 100%);
+    height: 80vh;
+    h1 img {
+      height: 31px;
+      margin-right: 12px;
+    }
+    .information {
+      margin-top: 10px;
+      color: $white;
+      text-shadow: $shadow;
+    }
+  }
+}
+
+// BLOG CONTENT
+
+.blog-content {
+  .wrapper {
+    width: 900px;
+    margin: auto;
+    text-align: center;
+    padding: 70px;
+  }
+  #video-preview, twitterwidget, .instagram-media {
+    margin: auto !important;
+    margin-top: 30px !important;
+    margin-bottom: 50px !important;
+  }
+  h1, p {
+    margin: auto;
+    color: #424242;
+    text-shadow: none;
+  }
+  h1 {
+    line-height: 80px;
+    padding-bottom: 20px;
+  }
+  p {
+    text-align: justify;
   }
 }
 
