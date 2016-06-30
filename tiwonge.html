@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tiwonge Chimbalanga</title>
+  <link rel="stylesheet" href="assets/styles/style.min.css">
+</head>
+<body>
+  <!-- SIDE MENU -->
+  <div id="menu-circle"><img id="open-menu" src="assets/images/icons/menu.svg"></div>
+  <img id="close-menu" src="assets/images/icons/menu-close.svg">
+  <div id="menu-content">
+    <h1>Découvrir</h1>
+    <p>Laissez-vous guider par les religions, les pays et les histoires incroyables de ces hommes et ces femmes, prêt à changer d'identité pour se sentir mieux.</p>
+    <div class="all-tag">
+      <span class="tag">Catholique</span>
+      <span class="tag">Musulman</span>
+      <span class="tag">Boudiste</span>
+      <span class="tag">Femme vers Homme</span>
+      <span class="tag">Homme vers Femme</span>
+      <span class="country tag"><img src="assets/images/flag/france.svg" alt="">Paris, FR</span>
+      <span class="country tag"><img src="assets/images/flag/jamaique.svg" alt="">Nancy, JM</span>
+      <span class="tag">Femme</span>
+      <span class="tag">Femme</span>
+      <span class="tag">Femme</span>
+    </div>
+  </div>
+
+
+  <!-- SIDE TWITTER -->
+  <button id="twitter-button"><img src="assets/images/icons/twitter.svg">Tweets</button>
+  <button id="close-twitter">Fermer</button>
+  <a class="twitter-timeline"  href="https://twitter.com/hashtag/transgender" data-widget-id="748178852673904641">Tweets sur #transgender</a>
+  <!-- /SIDE TWITTER -->
+
+  <div class="intro-personnage section" style="background-image: url('assets/images/personnage/tiwonge.jpg');">
+    <div class="container">
+      <h1>Tiwonge Chimbalanga</h1>
+      <p> Transsexuelle malawite, a été emprisonnée pour homosexualité en 2010 puis libérée un mois plus tard grâce à l'intervention de la communauté internationale. Elle vit désormais en Afrique du Sud. </p>
+      <div class="information">
+        <span class="country tag"><img src="assets/images/flag/france.svg" alt="">Afrique</span>
+        <span class="tag">Homme vers Femme</span>
+        <span class="tag">Musulman</span>
+      </div>
+    </div>
+  </div>
+  <div class="video section">
+    <div id="video-player">
+      <div id="informations">
+        <div id="principales-actions">
+          <img src="assets/images/player/playbutton.svg" id="playbutton" class="button">
+          <img src="assets/images/player/rewindbutton.svg" id="rewindbutton" class="button">
+          <img src="assets/images/player/pausebutton.svg" id="pausebutton" class="button">
+          <img src="assets/images/player/forwardbutton.svg" id="forwardbutton" class="button">
+        </div>
+        <div id="seek">
+          <input id="seek-bar" type="range" value="0" max="100" min="0" step="any">
+        </div>
+      </div>
+      <video id='video'>
+        <source src='assets/videos/tiwonge.mp4' type='video/mp4'>
+      </video>
+    </div>
+  </div>
+  <div class="other-content section" style="background-image: url('assets/images/personnage/alexis.jpg');">
+    <div class="container">
+      <h1>Ils sont semblables</h1>
+      <p>C’est en 1999 qu’Alexis fait son « coming out ». Il n’avait plus le choix. Il se faisait passer pour un garçon à l’insu de ses parents et ces derniers venaient de le découvrir. Il a obtenu sa mastectomie et a débuté la prise d’hormones masculine à l’âge de 19 ans.</p>
+      <div id="video-preview" style="background-image: url('assets/images/personnage/alexis.jpg');">
+        <div class="overlay">
+          <button class="discover"><a href="http://google.fr"><img src="assets/images/icons/play.svg">Découvrir</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="assets/library/scroll.min.js"></script>
+  <script>
+    $(function () {
+      $.scrollify({
+        section: '.section', // Name for the class section
+        scrollSpeed: 800,
+      });
+    });
+  </script>
+  <script src="assets/library/twitter.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
