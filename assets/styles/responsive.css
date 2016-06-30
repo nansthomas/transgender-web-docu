@@ -1,0 +1,19 @@
+.blog-content .wrapper{
+	width: 70%;
+}
+.blog-content .wrapper #video-preview{
+	width: 100%;
+}
+
+
+@media (max-width:700px) {
+	#twitter-widget-1{
+		display: none;
+	}
+	#twitter-button{
+		display: none;
+	}
+	.container h1{
+		font-size: 30px;
+	}
+}
