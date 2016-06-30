@@ -114,7 +114,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 // GLOBAL STYLE
 
 $shadow: 0 0 10px rgba(0,0,0,.1),0 1px 1px rgba(0,0,0,.3);
-$white: #FFFFFF;
+$white: #FFF;
 $proxima: 'proxima-nova';
 
 body {
@@ -140,6 +140,44 @@ p {
   padding-bottom: 10px;
 }
 
+#video-preview {
+  height: 390px;
+  background-size: cover;
+  width: 660px;
+  margin-top: 40px;
+  .overlay {
+    height: 100%;
+    width: 100%;
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.8) 100%);
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.8) 100%);
+    background: linear-gradient(to bottom,  rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.8) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .discover {
+      background: none;
+      border: 1.5px solid $white;
+      font-size: 20px;
+      padding: 15px 40px 18px 40px;
+      color: $white;
+      border-radius: 45px;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+      outline: none;
+      a {
+        text-decoration: none;
+        color: $white;
+      }
+      img {
+        height: 20px;
+        position: relative;
+        top: 3px;
+        margin-right: 15px;
+      }
+    }
+  }
+}
+
 ////////
 // MENU
 ////////
@@ -147,6 +185,7 @@ p {
 // TWITTER BUTTON
 
 #twitter-button {
+  z-index: 400;
   position: fixed;
   top: 20px;
   right: 20px;
@@ -201,6 +240,7 @@ p {
   transition: all 0.5s ease-in-out;
 }
 
+
 // PERSONNAGE PAGE
 
 .intro-personnage {
@@ -230,6 +270,21 @@ p {
           background: rgba(14, 14, 14, 0.40);
         }
       }
+    }
+  }
+}
+
+// OTHER CONTENT ON PERSONNAGE PAGE
+
+.other-content {
+  height: 100vh;
+  background: $white;
+  background-size:cover;
+  .container {
+    background-image: linear-gradient(136deg, rgba(255, 255, 255, 0.93) 0%, rgba(255, 255, 255, 0.95) 100%);
+    h1, p {
+      color: #3c3c3c;
+      text-shadow: none;
     }
   }
 }

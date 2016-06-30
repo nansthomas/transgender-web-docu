@@ -102,10 +102,10 @@ var twitterClose = document.querySelector('#close-twitter');
 
 setTimeout(function () {
   twitterFlux = document.querySelector('#twitter-widget-0');
-  console.log(twitterFlux);
 }, 400);
 
 twitterButton.addEventListener('click', function () {
+  twitterButton.style.display = 'none';
   twitterFlux.style.right = 0;
   twitterFlux.style.opacity = 1;
   setTimeout(function () {
@@ -117,4 +117,5 @@ twitterClose.addEventListener('click', function () {
   twitterFlux.style.right = '-380px';
   twitterFlux.style.opacity = 0;
   twitterClose.style.display = 'none';
+  twitterButton.style.display = 'block';
 });
