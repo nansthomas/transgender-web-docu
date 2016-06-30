@@ -211,7 +211,19 @@ p {
   top: 30px;
   left: 36px;
   display: none;
-  z-index: 400;
+  z-index: 1001;
+  cursor: pointer;
+}
+
+#menu-content {
+  height: 100vh;
+  background: white;
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  display: none;
 }
 
 // TWITTER BUTTON
