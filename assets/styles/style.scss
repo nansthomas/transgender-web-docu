@@ -150,12 +150,12 @@ p {
   position: fixed;
   top: 20px;
   right: 20px;
-  color: white;
+  color: $white;
   background: none;
   border: none;
   cursor: pointer;
   font-size: 13px;
-  border: 1px solid white;
+  border: 1px solid $white;
   border-radius: 5px;
   padding: 2px 11px 10px 11px;
   transition: all 0.3s ease;
@@ -171,6 +171,22 @@ p {
   }
 }
 
+#close-twitter {
+  position: fixed;
+  top: 6px;
+  right: 5px;
+  color: #3b94d9;
+  font-size: 13px;
+  border: 1px solid #3b94d9;
+  outline: none;
+  cursor: pointer;
+  background: none;
+  padding: 7px;
+  border-radius: 5px;
+  z-index: 300;
+  display: none;
+}
+
 .twitter-timeline {
   display: none;
 }
@@ -182,7 +198,7 @@ p {
   z-index: 200;
   right: -380px;
   opacity: 0;
-  transition: all 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 // PERSONNAGE PAGE

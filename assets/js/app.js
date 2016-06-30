@@ -93,3 +93,28 @@ rewind.addEventListener('mouseup', function () {
   clearInterval(intervalRewind);
   video.play();
 });
+
+// TWITTER FLUX
+
+var twitterFlux;
+var twitterButton = document.querySelector('#twitter-button');
+var twitterClose = document.querySelector('#close-twitter');
+
+setTimeout(function () {
+  twitterFlux = document.querySelector('#twitter-widget-0');
+  console.log(twitterFlux);
+}, 400);
+
+twitterButton.addEventListener('click', function () {
+  twitterFlux.style.right = 0;
+  twitterFlux.style.opacity = 1;
+  setTimeout(function () {
+    twitterClose.style.display = 'block';
+  }, 500);
+});
+
+twitterClose.addEventListener('click', function () {
+  twitterFlux.style.right = '-380px';
+  twitterFlux.style.opacity = 0;
+  twitterClose.style.display = 'none';
+});
