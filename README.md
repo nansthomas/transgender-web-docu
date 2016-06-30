@@ -5,7 +5,7 @@ This is a web-documentaire about the Transgender
 
 To add a FullScreen Player in the page
 
-```
+```html
 <div id="video-player">
   <div id="informations"> // You can delete this part
     <div id="principales-actions">
