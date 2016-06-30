@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Khloé Dubé</title>
+  <link rel="stylesheet" href="assets/styles/style.min.css">
+</head>
+<body>
+  <!-- SIDE MENU -->
+  <div id="menu-circle"><img id="open-menu" src="assets/images/icons/menu.svg"></div>
+  <img id="close-menu" src="assets/images/icons/menu-close.svg">
+  <div id="menu-content">
+    <h1>Découvrir</h1>
+    <p>Laissez-vous guider par les religions, les pays et les histoires incroyables de ces hommes et ces femmes, prêt à changer d'identité pour se sentir mieux.</p>
+    <div class="all-tag">
+      <span class="tag">Catholique</span>
+      <span class="tag">Musulman</span>
+      <span class="tag">Boudiste</span>
+      <span class="tag">Femme vers Homme</span>
+      <span class="tag">Homme vers Femme</span>
+      <span class="country tag"><img src="assets/images/flag/france.svg" alt="">Paris, FR</span>
+      <span class="country tag"><img src="assets/images/flag/jamaique.svg" alt="">Nancy, JM</span>
+      <span class="tag">Femme</span>
+      <span class="tag">Femme</span>
+      <span class="tag">Femme</span>
+    </div>
+  </div>
+
+
+  <!-- SIDE TWITTER -->
+  <button id="twitter-button"><img src="assets/images/icons/twitter.svg">Tweets</button>
+  <button id="close-twitter">Fermer</button>
+  <a class="twitter-timeline"  href="https://twitter.com/hashtag/transgender" data-widget-id="748178852673904641">Tweets sur #transgender</a>
+  <!-- /SIDE TWITTER -->
+
+  <div class="intro-personnage section" style="background-image: url('assets/images/personnage/khloe.jpg');">
+    <div class="container">
+      <h1> Khloé Dubé </h1>
+      <p>Née biologiquement garçon. Sa mère, Geneviève, a commencé à avoir des doutes sur l’identité de son fils alors qu’il avait 3 ans. Il était très efféminé et aimait s’habiller en fille. C’est à l’âge de 12 ans que Khloé a décidé de faire son coming out à sa famille. Elle avait demandé à sa mère de la maquiller. « Maman, j’ai quelque chose à te dire. Je ne suis pas dans le bon corps. Je suis une fille. ». Sa maman lui avoua le savoir depuis longtemps, mais qu’elle souhaitait qu’elle le réalise par elle-même. Aujourd’hui, âgée de 14 ans, Khloé prend des bloquants de testostérone pour arrêter sa puberté masculine et elle a débuté sa prise d’œstrogène en novembre.</p>
+      <div class="information">
+        <span class="country tag"><img src="assets/images/flag/canada.svg" alt="">Canada</span>
+        <span class="tag">Catholique</span>
+        <span class="tag">Homme vers Femme</span>
+      </div>
+    </div>
+  </div>
+  <div class="video section">
+    <div id="video-player">
+      <div id="informations">
+        <div id="principales-actions">
+          <img src="assets/images/player/playbutton.svg" id="playbutton" class="button">
+          <img src="assets/images/player/rewindbutton.svg" id="rewindbutton" class="button">
+          <img src="assets/images/player/pausebutton.svg" id="pausebutton" class="button">
+          <img src="assets/images/player/forwardbutton.svg" id="forwardbutton" class="button">
+        </div>
+        <div id="seek">
+          <input id="seek-bar" type="range" value="0" max="100" min="0" step="any">
+        </div>
+      </div>
+      <video id='video'>
+        <source src='assets/videos/khloe.mp4' type='video/mp4'>
+      </video>
+    </div>
+  </div>
+  <div class="other-content section" style="background-image: url('assets/images/personnage/alexis.jpg');">
+    <div class="container">
+      <h1>Ils sont semblables</h1>
+      <p>C’est en 1999 qu’Alexis fait son « coming out ». Il n’avait plus le choix. Il se faisait passer pour un garçon à l’insu de ses parents et ces derniers venaient de le découvrir. Il a obtenu sa mastectomie et a débuté la prise d’hormones masculine à l’âge de 19 ans.</p>
+      <div id="video-preview" style="background-image: url('assets/images/personnage/alexis.jpg');">
+        <div class="overlay">
+          <button class="discover"><a href="alexis.html"><img src="assets/images/icons/play.svg">Découvrir</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="assets/library/scroll.min.js"></script>
+  <script>
+    $(function () {
+      $.scrollify({
+        section: '.section', // Name for the class section
+        scrollSpeed: 800,
+      });
+    });
+  </script>
+  <script src="assets/library/twitter.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
