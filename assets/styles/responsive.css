@@ -16,4 +16,32 @@
 	.container h1{
 		font-size: 30px;
 	}
+	.information{
+		text-align: center;
+		font-size: 12px;
+	}
+	.tag{
+		margin-top: 10px;
+	}
+	#menu-content h1{
+		font-size: 14px;
+	}
+	#menu-content p{
+		font-size: 12px;
+	}
+	.all-tag{
+		font-size: 12px;
+	}
+	.intro-personnage p{
+		font-size: 12px;
+	} 
+	.intro-country p{
+		font-size: 12px;
+	} 
+	.other-content h1{
+		font-size: 16px;
+	} 
+	.other-content p{
+		font-size: 12px;
+	} 
 }
