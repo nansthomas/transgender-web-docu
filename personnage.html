@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Video Player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="coucou" style="height: 100vh; background: red;"></div>
+  <div class="video coucou">
+    <div id="video-player">
+      <div id="informations">
+        <div id="principales-actions">
+          <img src="playbutton.svg" id="playbutton" class="button">
+          <img src="rewindbutton.svg" id="rewindbutton" class="button">
+          <img src="pausebutton.svg" id="pausebutton" class="button">
+          <img src="forwardbutton.svg" id="forwardbutton" class="button">
+        </div>
+        <div id="seek">
+          <input id="seek-bar" type="range" value="0" max="100" min="0" step="any">
+        </div>
+      </div>
+      <video id='video' poster="https://peach.blender.org/wp-content/uploads/bbb-splash.png">
+        <source src='test.mp4' type='video/mp4'>
+      </video>
+    </div>
+  </div>
+  <div class="coucou" style="height: 100vh; background: green;"></div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="scroll.min.js"></script>
+  <script>
+    $(function () {
+      $.scrollify({
+        section: '.coucou',
+        scrollSpeed: 800,
+      });
+    });
+  </script>
+  <script src="app.js"></script>
+</body>
+</html>
