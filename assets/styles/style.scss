@@ -17,6 +17,10 @@ body {
   padding: 0;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
 #video {
   position: fixed;
@@ -389,6 +393,14 @@ p {
     h1 img {
       height: 31px;
       margin-right: 12px;
+      @media screen and (max-width: 700px) {
+        height: 22px;
+      }
+    }
+    p {
+      @media screen and (max-width: 700px) {
+        line-height: 19px;
+      }
     }
     .information {
       margin-top: 10px;
@@ -485,10 +497,29 @@ p {
   flex-direction: column;
   display: none;
   color: $white;
+  h1 {
+    line-height: 25px;
+    text-align: center;
+    @media screen and (max-width: 865px) {
+      font-size: 35px;
+    }
+    @media screen and (max-width: 640px) {
+      font-size: 25px;
+    }
+    @media screen and (max-width: 400px) {
+      font-size: 20px;
+    }
+  }
+  p {
+    line-height: 20px;
+  }
   .all-tag {
     width: 60%;
     text-align: center;
     margin-top: 10px;
+    @media screen and (max-width: 700px) {
+      width: 90%;
+    }
   }
   .tag {
     line-height: 20px;

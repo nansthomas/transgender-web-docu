@@ -41,16 +41,16 @@
 	}
 	.intro-personnage p{
 		font-size: 14px;
-	} 
+	}
 	.intro-country p{
 		font-size: 14px;
-	} 
+	}
 	.other-content h1{
 		font-size: 16px;
-	} 
+	}
 	.other-content p{
 		font-size: 14px;
-	} 
+	}
 	.footer h1{
 		font-size: 18px;
 	}
@@ -68,9 +68,6 @@
 	}
 	#menu-content .all-perso .perso{
 		display: none;
-	}
-	#select h1{
-		font-size: 18px;
 	}
 	a{
 		text-decoration: none;
