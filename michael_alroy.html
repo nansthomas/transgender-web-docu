@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Michael Alroy</title>
+  <link rel="stylesheet" href="assets/styles/style.min.css">
+</head>
+<body>
+  <!-- SIDE MENU -->
+  <div id="menu-circle"><img id="open-menu" src="assets/images/icons/menu.svg"></div>
+  <img id="close-menu" src="assets/images/icons/menu-close.svg">
+  <div id="menu-content">
+    <h1>Découvrir</h1>
+    <p>Laissez-vous guider par les religions, les pays et les histoires incroyables de ces hommes et ces femmes, prêt à changer d'identité pour se sentir mieux.</p>
+    <div class="all-tag">
+      <span class="tag">Catholique</span>
+      <span class="tag">Musulman</span>
+      <span class="tag">Boudiste</span>
+      <span class="tag">Femme vers Homme</span>
+      <span class="tag">Homme vers Femme</span>
+      <span class="country tag"><img src="assets/images/flag/france.svg" alt="">Paris, FR</span>
+      <span class="country tag"><img src="assets/images/flag/jamaique.svg" alt="">Nancy, JM</span>
+      <span class="tag">Femme</span>
+      <span class="tag">Femme</span>
+      <span class="tag">Femme</span>
+    </div>
+  </div>
+
+
+  <!-- SIDE TWITTER -->
+  <button id="twitter-button"><img src="assets/images/icons/twitter.svg">Tweets</button>
+  <button id="close-twitter">Fermer</button>
+  <a class="twitter-timeline"  href="https://twitter.com/hashtag/transgender" data-widget-id="748178852673904641">Tweets sur #transgender</a>
+  <!-- /SIDE TWITTER -->
+
+  <div class="intro-personnage section" style="background-image: url('assets/images/personnage/michael_alroy.png');">
+    <div class="container">
+      <h1>Michael Alroy</h1>
+      <p>Michael né petite fille en afrique du sud sous le nom de michelle, migre avec sa famille en Israel.
+A cette époque michelle ne se sent pas bien dans son corps, il fait alors des recherches sur les transgenres puis fait sa transition à l’âge de 18 ans et assume pleinement sa situation à l’âge de 25 ans. 
+</p>
+      <div class="information">
+        <span class="country tag"><img src="assets/images/flag/france.svg" alt="">Tel Aviv, IL</span>
+        <span class="tag">Femme vers Homme</span>
+        <span class="tag">Juif</span>
+      </div>
+    </div>
+  </div>
+  <div class="video section">
+    <div id="video-player">
+      <div id="informations">
+        <div id="principales-actions">
+          <img src="assets/images/player/playbutton.svg" id="playbutton" class="button">
+          <img src="assets/images/player/rewindbutton.svg" id="rewindbutton" class="button">
+          <img src="assets/images/player/pausebutton.svg" id="pausebutton" class="button">
+          <img src="assets/images/player/forwardbutton.svg" id="forwardbutton" class="button">
+        </div>
+        <div id="seek">
+          <input id="seek-bar" type="range" value="0" max="100" min="0" step="any">
+        </div>
+      </div>
+      <video id='video' poster="">
+        <source src='assets/videos/michael.mp4' type='video/mp4'>
+      </video>
+    </div>
+  </div>
+  <div class="other-content section" style="background-image: url('assets/images/personnage/andreja.jpg');">
+    <div class="container">
+      <h1>Ils sont semblables</h1>
+      <p>Kemal Ördek, défenseur des droits humains, qui a été violée, volée et agressée à Ankara en Turquie, et se joint aux organisations de défense des droits humains turques et internationales.</p>
+      <div id="video-preview" style="background-image: url('assets/images/personnage/kemal_ordek.png');">
+        <div class="overlay">
+          <button class="discover"><a href="kemal_ordek.html"><img src="assets/images/icons/play.svg">Découvrir</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="assets/library/scroll.min.js"></script>
+  <script>
+    $(function () {
+      $.scrollify({
+        section: '.section', // Name for the class section
+        scrollSpeed: 800,
+      });
+    });
+  </script>
+  <script src="assets/library/twitter.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

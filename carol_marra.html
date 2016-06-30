@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Carol Marra</title>
+  <link rel="stylesheet" href="assets/styles/style.min.css">
+</head>
+<body>
+  <!-- SIDE MENU -->
+  <div id="menu-circle"><img id="open-menu" src="assets/images/icons/menu.svg"></div>
+  <img id="close-menu" src="assets/images/icons/menu-close.svg">
+  <div id="menu-content">
+    <h1>Découvrir</h1>
+    <p>Laissez-vous guider par les religions, les pays et les histoires incroyables de ces hommes et ces femmes, prêt à changer d'identité pour se sentir mieux.</p>
+    <div class="all-tag">
+      <span class="tag">Catholique</span>
+      <span class="tag">Musulman</span>
+      <span class="tag">Boudiste</span>
+      <span class="tag">Femme vers Homme</span>
+      <span class="tag">Homme vers Femme</span>
+      <span class="country tag"><img src="assets/images/flag/france.svg" alt="">Paris, FR</span>
+      <span class="country tag"><img src="assets/images/flag/jamaique.svg" alt="">Nancy, JM</span>
+      <span class="tag">Femme</span>
+      <span class="tag">Femme</span>
+      <span class="tag">Femme</span>
+    </div>
+  </div>
+
+
+  <!-- SIDE TWITTER -->
+  <button id="twitter-button"><img src="assets/images/icons/twitter.svg">Tweets</button>
+  <button id="close-twitter">Fermer</button>
+  <a class="twitter-timeline"  href="https://twitter.com/hashtag/transgender" data-widget-id="748178852673904641">Tweets sur #transgender</a>
+  <!-- /SIDE TWITTER -->
+
+  <div class="intro-personnage section" style="background-image: url('assets/images/personnage/carol_marra.jpg');">
+    <div class="container">
+      <h1>Carol Marra</h1>
+      <p>Carol Marra, né biologiquement homme est un transgenre de 25 ans. A l’age de 18ans elle se cachait dans sa voiture pour se changer et sortir déguisait en fille. C’est à 19ans qu’elle commence sa transformation. Aujourd’hui, a 25ans, elle est actrice et manequin.</p>
+      <div class="information">
+        <span class="country tag"><img src="assets/images/flag/france.svg" alt="">Sao Paolo, BR</span>
+        <span class="tag">Homme vers Femme</span>
+        <span class="tag">Catholique</span>
+      </div>
+    </div>
+  </div>
+  <div class="video section">
+    <div id="video-player">
+      <div id="informations">
+        <div id="principales-actions">
+          <img src="assets/images/player/playbutton.svg" id="playbutton" class="button">
+          <img src="assets/images/player/rewindbutton.svg" id="rewindbutton" class="button">
+          <img src="assets/images/player/pausebutton.svg" id="pausebutton" class="button">
+          <img src="assets/images/player/forwardbutton.svg" id="forwardbutton" class="button">
+        </div>
+        <div id="seek">
+          <input id="seek-bar" type="range" value="0" max="100" min="0" step="any">
+        </div>
+      </div>
+      <video id='video' poster="">
+        <source src='assets/videos/carol.mp4' type='video/mp4'>
+      </video>
+    </div>
+  </div>
+  <div class="other-content section" style="background-image: url('assets/images/personnage/andreja.jpg');">
+    <div class="container">
+      <h1>Ils sont semblables</h1>
+      <p>Paola a changer de sexe a 15ans, en prenant des pillules de contraceptions.</p>
+      <div id="video-preview" style="background-image: url('assets/images/personnage/paola.jpg');">
+        <div class="overlay">
+          <button class="discover"><a href="paola.html"><img src="assets/images/icons/play.svg">Découvrir</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="assets/library/scroll.min.js"></script>
+  <script>
+    $(function () {
+      $.scrollify({
+        section: '.section', // Name for the class section
+        scrollSpeed: 800,
+      });
+    });
+  </script>
+  <script src="assets/library/twitter.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
