@@ -45,9 +45,14 @@ if (video) {
 
   // LISTEN MOUSE MOVE
   informations.addEventListener('mousemove', function () {
-    informations.style.opacity = 100;
-    clearTimeout(time);
-    time = setTimeout(DontShowInfos, 3000);
+    if (size <= 768) {
+      informations.style.opacity = 100;
+    } else {
+      informations.style.opacity = 100;
+      clearTimeout(time);
+      time = setTimeout(DontShowInfos, 3000);
+    }
+
   });
 
   // CLICK TO PLAY
