@@ -560,4 +560,16 @@ p {
   }
 }
 
+.mentions-legale {
+  position: absolute;
+  bottom: 0px;
+  right: 20px;
+  z-index: 5000;
+  h3 {
+    font-size: 12px;
+    font-weight: 100;
+    color: white;
+  }
+}
+
 @import 'unlock';
